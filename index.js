@@ -6,7 +6,7 @@ let citytours = [
   ];
 
   let turno = prompt("De jueves a domingo, elige un día y te contamos qué citytour podés hacer");
-  let filtrados = citytours.filter(item => item.nombre === turno);
+  let filtrados = citytours.filter(item => item.nombre === turno); 
 
   for(const producto of filtrados){
     let div = document.createElement("salidas");
@@ -18,4 +18,4 @@ let citytours = [
     contenedor.append(div);
   } 
 
-  
+ /* Marce, en la parte de filter, no está bien pensado? que de acuerdo al dia elegido me filtre qué tour hay disponible?*/ 
