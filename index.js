@@ -9,7 +9,7 @@ let citytours = [
   let filtrados = citytours.filter(item => item.nombre === turno); 
 
   for(const producto of filtrados){
-    let div = document.createElement("salidas");
+    let div = document.createElement("div");
     div.innerHTML = `
       <h2>ID: ${producto.id}</h2>
       <p>Producto: ${producto.nombre}</p>
@@ -19,3 +19,4 @@ let citytours = [
   } 
 
  /* Marce, en la parte de filter, no está bien pensado? que de acuerdo al dia elegido me filtre qué tour hay disponible?*/ 
+/*porque no logro que aparezca en el html?? */
